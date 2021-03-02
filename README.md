@@ -1,4 +1,4 @@
-uvm_ports
+UVM ports
 
 This repo has basic uvm examples to understand :
 
