@@ -16,4 +16,4 @@ TLM Analysis port
 ![](gifs/tlm-ap.gif)
 
 TLM Analysis fifo
-![](gifs/tlm-af.gif)
+![](gifs/tlm-af.png)
