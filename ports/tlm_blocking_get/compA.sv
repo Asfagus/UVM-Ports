@@ -18,6 +18,6 @@ endfunction
 //get task implementation
 task get(output int b); 
 	 b=4;
-endtask
+endtask : get
 
 endclass : compA

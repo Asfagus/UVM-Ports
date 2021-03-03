@@ -18,7 +18,7 @@ endfunction
 //put task implementation
 task put(input int b); 
  	 $display(b);
-endtask
+endtask : put
 
 endclass : compB
 

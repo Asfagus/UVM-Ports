@@ -318,7 +318,7 @@ XRDP_SESSION=1
 XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_11
 XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_11
 XMODIFIERS=@im=ibus
-XDG_SESSION_ID=43246
+XDG_SESSION_ID=44127
 XDG_RUNTIME_DIR=/run/user/1222974132
 XDG_MENU_PREFIX=gnome-
 XDG_DATA_DIRS=/home/014538550/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
@@ -344,10 +344,10 @@ STROOT=/apps/synopsys/TCAD
 STRELEASE=current
 STDB=/home/014538550/sentaurus
 SSH_AUTH_SOCK=/run/user/1222974132/keyring/ssh
-SSH_AGENT_PID=28563
+SSH_AGENT_PID=14409
 SNPSLMS_LICENSE_FILE=27000@cadence3.engr.sjsu.edu:/apps/synopsys/license/current-license-key
 SKIP_CDS_DIALOG=
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/28384,unix/unix:/tmp/.ICE-unix/28384
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/14239,unix/unix:/tmp/.ICE-unix/14239
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
@@ -378,10 +378,10 @@ HOSTTYPE=x86_64-linux
 HISTCONTROL=ignoredups
 GROUP=domain users
 GNOME_TERMINAL_SERVICE=:1.99
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/90494885_5b65_46ad_b459_0dcd76f83f46
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/8dcf433c_dbfa_4954_9230_5cd4743c42c3
 GNOME_SHELL_SESSION_MODE=classic
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-kITzAVAqpk,guid=a67318849b29098515ce0d27603e9bcc
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Habv0v9qRy,guid=b58b42a5f5e86dbb21cad6f9603fe660
 COLORTERM=truecolor
 CLS_CSD_COMPATIBILITY_LOCKING=NO
 CLS_CDSD_COMPATIBILITY_LOCKING=NO
@@ -395,8 +395,8 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 ARCH=linux
 0
 146
-1614718601 compB.sv
-1614718595 compA.sv
+1614803466 compB.sv
+1614803528 compA.sv
 1402647219 /home/morris/uvm-1.2/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh
 1402647219 /home/morris/uvm-1.2/src/reg/sequences/uvm_reg_mem_built_in_seq.svh
 1402647219 /home/morris/uvm-1.2/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh
@@ -547,5 +547,5 @@ ARCH=linux
 1607401344 /apps/synopsys/vcs/R-2020.12/linux/lib/liberrorinf.so
 1607401192 /apps/synopsys/vcs/R-2020.12/linux/lib/libsnpsmalloc.so
 1607401539 /apps/synopsys/vcs/R-2020.12/linux/lib/libvfs.so
-1614718620 simv.daidir
+1614803604 simv.daidir
 -1 partitionlib
