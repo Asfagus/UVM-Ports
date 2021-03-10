@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/home/014538550/273/ports/tlm_analysis_fifo/simv.daidir
+pDaiDir                            	/home/014538550@SJSUAD.SJSU.EDU/273/ports/tlm_analysis_fifo/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

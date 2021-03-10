@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-cd /home/014538550/273/ports/tlm_blocking_get
+cd /home/014538550@SJSUAD.SJSU.EDU/273/ports/tlm_blocking_get
 
 #This ENV is used to avoid overriding current script in next vcselab run 
 setenv SNPS_VCSELAB_SCRIPT_NO_OVERRIDE  1

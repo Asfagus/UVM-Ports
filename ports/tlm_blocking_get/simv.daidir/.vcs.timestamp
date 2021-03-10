@@ -311,19 +311,19 @@
 /apps/synopsys/vcs/R-2020.12/linux/bin/vcs1
 /home/morris/uvm-1.2/src/uvm.sv
 tb.sv
-81
+89
 cdk_dir=/apps/cadence/IC50/tools/dfII/local
 XRDP_SOCKET_PATH=/tmp/.xrdp
 XRDP_SESSION=1
-XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_11
-XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_11
-XMODIFIERS=@im=ibus
-XDG_SESSION_ID=44127
+XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_10
+XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_10
+XMODIFIERS=@im=none
+XDG_SESSION_ID=1203
 XDG_RUNTIME_DIR=/run/user/1222974132
 XDG_MENU_PREFIX=gnome-
-XDG_DATA_DIRS=/home/014538550/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_DATA_DIRS=/home/014538550@SJSUAD.SJSU.EDU/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 XDG_CURRENT_DESKTOP=GNOME
-VTE_VERSION=5202
+VTE_VERSION=5405
 VMR_MODE_FLAG=32
 VENDOR=unknown
 VCS_MX_HOME_INTERNAL=1
@@ -342,17 +342,16 @@ SYNOPSYS_SIM=/apps/synopsys/2000.12
 SYNOPSYS=/apps/synopsys
 STROOT=/apps/synopsys/TCAD
 STRELEASE=current
-STDB=/home/014538550/sentaurus
+STDB=/home/014538550@SJSUAD.SJSU.EDU/sentaurus
 SSH_AUTH_SOCK=/run/user/1222974132/keyring/ssh
-SSH_AGENT_PID=14409
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=18484
 SNPSLMS_LICENSE_FILE=27000@cadence3.engr.sjsu.edu:/apps/synopsys/license/current-license-key
 SKIP_CDS_DIALOG=
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/14239,unix/unix:/tmp/.ICE-unix/14239
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/18039,unix/unix:/tmp/.ICE-unix/18039
 SCRNAME=vcs
 SCRIPT_NAME=vcs
-QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
-QT_IM_MODULE=ibus
-QT_GRAPHICSSYSTEM_CHECKED=1
+QT_IM_MODULE=xim
 QTLIB=/usr/lib64/qt-3.3/lib
 QTINC=/usr/lib64/qt-3.3/include
 QTDIR=/usr/lib64/qt-3.3
@@ -360,8 +359,12 @@ PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
 PRIMETIME_ROOT=/apps/synopsys/pt2000.11
 OVA_UUM=0
 OSTYPE=linux
+MODULES_USE_COMPAT_VERSION=0
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
 MODULESHOME=/usr/share/Modules
-MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MODULEPATH_modshare=/usr/share/modulefiles:1:/usr/share/Modules/modulefiles:1:/etc/modulefiles:1
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MGLS_LICENSE_FILE=17000@COE-E239-EELIC.sjsuad.sjsu.edu
 LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
@@ -376,12 +379,14 @@ IC=/apps/cadence/IC50
 HSP_HOME=/apps/synopsys/HSPICE/hspice
 HOSTTYPE=x86_64-linux
 HISTCONTROL=ignoredups
+GTK_IM_MODULE=gtk-im-context-simple
 GROUP=domain users
-GNOME_TERMINAL_SERVICE=:1.99
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/8dcf433c_dbfa_4954_9230_5cd4743c42c3
-GNOME_SHELL_SESSION_MODE=classic
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Habv0v9qRy,guid=b58b42a5f5e86dbb21cad6f9603fe660
+GNOME_TERMINAL_SERVICE=:1.94
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/5725e3a4_642e_404a_9546_1f90c16e8f66
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+ENV=/usr/share/Modules/init/profile.sh
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1222974132/bus
 COLORTERM=truecolor
 CLS_CSD_COMPATIBILITY_LOCKING=NO
 CLS_CDSD_COMPATIBILITY_LOCKING=NO
@@ -391,7 +396,10 @@ CDS_Netlisting_Mode=Analog
 CDS_LIC_FILE=5280@COE-E239-EELIC.sjsuad.sjsu.edu:/apps/cadence/license-current
 CDSLMD_LICENSE_FILE=5280@COE-E239-EELIC.sjsuad.sjsu.edu:/apps/cadence/license-current
 CDS=/apps/cadence
-BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre}/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+BASH_ENV=/usr/share/Modules/init/bash
 ARCH=linux
 0
 146
@@ -547,5 +555,5 @@ ARCH=linux
 1607401344 /apps/synopsys/vcs/R-2020.12/linux/lib/liberrorinf.so
 1607401192 /apps/synopsys/vcs/R-2020.12/linux/lib/libsnpsmalloc.so
 1607401539 /apps/synopsys/vcs/R-2020.12/linux/lib/libvfs.so
-1614803604 simv.daidir
+1615321823 simv.daidir
 -1 partitionlib

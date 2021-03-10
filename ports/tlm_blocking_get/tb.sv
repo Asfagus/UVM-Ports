@@ -20,7 +20,7 @@ class my_test extends uvm_test;
 	
 	function void connect_phase (uvm_phase phase);
 		super.connect_phase(phase);
-		b.get_port.connect(a.get_export);//first is the "port" port object, here b 
+		b.get_port.connect(a.get_export);	//first is the "port" port object, here b 
 	endfunction : connect_phase
 
 endclass

@@ -22,7 +22,7 @@ endfunction
 //run task implementation
 task run_phase(uvm_phase phase); 
 	super.run_phase(phase);
-	repeat(3)begin
+	repeat(1)begin
 	 b=$urandom_range(0,10);
 	 $display("compA wrote :%d",b);
 	 analyis_port.write(b);

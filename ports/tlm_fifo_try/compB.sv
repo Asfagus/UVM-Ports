@@ -1,0 +1,33 @@
+//Consumer is having "port" port 
+class compB extends uvm_component;
+`uvm_component_utils (compB);
+//get port
+uvm_get_port #(int) get_port;
+
+int out; 
+
+function new (string name="compB",uvm_component parent=null);
+	super.new(name,parent);
+endfunction
+
+function void build_phase (uvm_phase phase);
+	super.build_phase(phase);
+	//typeid doesnot work
+	//get_port=uvm_blocking_get_port::type_id::create("port_port",this);
+		get_port=new ("port_port",this);
+endfunction
+
+//run task implementation
+task run_phase(uvm_phase phase); 
+	super.run_phase(phase);
+	 repeat(3) begin
+	 #100;
+	 get_port.try_get(out);
+	 $display($time," compB reads %d",out);
+	end
+endtask
+
+endclass : compB
+
+
+
