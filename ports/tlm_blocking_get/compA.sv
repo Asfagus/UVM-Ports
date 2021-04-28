@@ -20,4 +20,4 @@ task get(output int b);
 	 b=4;
 endtask : get
 
-endclass : compA
+endclass : compA     
